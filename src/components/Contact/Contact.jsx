@@ -16,12 +16,6 @@ const Contact = () => {  return (
 
         <div className="contact__grid">
           <div className="contact__info">
-            <h3 className="contact__info-title">Let's talk about everything!</h3>
-            <p className="contact__info-text">
-              Don't hesitate to reach out. I'm always open to discussing new projects, 
-              creative ideas, or opportunities to be part of your vision.
-            </p>
-
             <div className="contact__details">
               <div className="contact__detail">
                 <div className="contact__detail-icon">
