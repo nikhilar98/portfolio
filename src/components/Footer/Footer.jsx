@@ -34,14 +34,11 @@ const Footer = () => {
           <div className="footer__links-section">
             <h4 className="footer__heading">Connect</h4>
             <div className="footer__socials">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/nikhilar98/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <FiGithub size={18} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/nikhil-a-r/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FiLinkedin size={18} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <FiTwitter size={18} />
               </a>
             </div>
           </div>
