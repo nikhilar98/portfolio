@@ -23,16 +23,6 @@ const About = () => {
         </div>
 
         <div className="about__grid">
-          <div className="about__image-wrapper">
-            <div className="about__image-card">
-              <div className="about__image-placeholder">
-                <span className="about__image-emoji">👨‍💻</span>
-                <span className="about__image-label">Your Photo Here</span>
-              </div>
-              <div className="about__image-decoration" />
-            </div>
-          </div>
-
           <div className="about__content">
             <h3 className="about__heading">
               I'm a Software Engineer who loves turning ideas into reality
