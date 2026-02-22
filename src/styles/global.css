@@ -22,6 +22,10 @@
   --gradient-hero: radial-gradient(ellipse at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
   --gradient-card: linear-gradient(180deg, rgba(139, 92, 246, 0.06) 0%, transparent 40%);
 
+  /* Torch effect */
+  --torch-x: 50%;
+  --torch-y: 50%;
+
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
@@ -273,4 +277,19 @@ input, textarea {
   :root {
     --container-width: 1900px;
   }
+}
+
+/* ===== Torch / Spotlight Effect ===== */
+.torch-effect {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 250px at var(--torch-x) var(--torch-y),
+    rgba(139, 92, 246, 0.08) 0%,
+    rgba(139, 92, 246, 0.04) 30%,
+    transparent 70%
+  );
+  transition: background 0.05s ease;
 }
