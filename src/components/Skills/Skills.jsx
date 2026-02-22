@@ -1,54 +1,42 @@
-import {
-  FiLayout, FiServer, FiDatabase, FiSmartphone,
-  FiGitBranch, FiCloud
-} from 'react-icons/fi';
-import {
-  SiReact, SiNextdotjs, SiTypescript, SiJavascript,
-  SiNodedotjs, SiPython, SiPostgresql, SiMongodb,
-  SiDocker, SiAmazonwebservices, SiGit, SiTailwindcss,
-  SiRedis, SiGraphql, SiFigma, SiLinux
-} from 'react-icons/si';
+import { FiLayout, FiServer, FiZap, FiTool } from 'react-icons/fi';
 import './Skills.css';
 
 const skillCategories = [
   {
-    title: 'Frontend',
+    title: 'Frontend Development',
     icon: <FiLayout />,
     skills: [
-      { name: 'React', icon: <SiReact />, level: 95 },
-      { name: 'Next.js', icon: <SiNextdotjs />, level: 88 },
-      { name: 'TypeScript', icon: <SiTypescript />, level: 90 },
-      { name: 'JavaScript', icon: <SiJavascript />, level: 95 },
-      { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 92 },
+      'HTML', 'CSS', 'JavaScript', 'React.js', 'Next.js',
+      'Redux', 'Progressive Web Apps', 'MSAL',
+      'ES6 Promises', 'Async/Await', 'Local Storage',
+      'Core UI', 'Material UI', 'Figma',
     ],
   },
   {
-    title: 'Backend',
+    title: 'Performance Optimizations',
+    icon: <FiZap />,
+    skills: [
+      'Lighthouse Optimization', 'Service Workers',
+      'Code Splitting', 'Lazy Loading',
+      'Memoization', 'Rendering Optimization',
+    ],
+  },
+  {
+    title: 'Backend Development',
     icon: <FiServer />,
     skills: [
-      { name: 'Node.js', icon: <SiNodedotjs />, level: 90 },
-      { name: 'Python', icon: <SiPython />, level: 85 },
-      { name: 'GraphQL', icon: <SiGraphql />, level: 80 },
+      'Node.js', 'Express.js', 'REST API', 'JWT',
+      'AWS (S3, EC2)', 'Bcrypt.js',
+      'MongoDB', 'Couchbase', 'Redis',
     ],
   },
   {
-    title: 'Database',
-    icon: <FiDatabase />,
+    title: 'Tools & DevOps',
+    icon: <FiTool />,
     skills: [
-      { name: 'PostgreSQL', icon: <SiPostgresql />, level: 88 },
-      { name: 'MongoDB', icon: <SiMongodb />, level: 85 },
-      { name: 'Redis', icon: <SiRedis />, level: 75 },
-    ],
-  },
-  {
-    title: 'DevOps & Tools',
-    icon: <FiCloud />,
-    skills: [
-      { name: 'Docker', icon: <SiDocker />, level: 82 },
-      { name: 'AWS', icon: <SiAmazonwebservices />, level: 78 },
-      { name: 'Git', icon: <SiGit />, level: 92 },
-      { name: 'Linux', icon: <SiLinux />, level: 80 },
-      { name: 'Figma', icon: <SiFigma />, level: 75 },
+      'VS Code', 'Git', 'Docker', 'Azure DevOps',
+      'Postman', 'Jenkins', 'CI/CD Pipelines',
+      'GitHub Copilot', 'Claude Code', 'Grafana', 'MCP Servers',
     ],
   },
 ];
@@ -75,20 +63,11 @@ const Skills = () => {
                 <h3 className="skills__card-title">{category.title}</h3>
               </div>
 
-              <div className="skills__list">
+              <div className="skills__tags">
                 {category.skills.map((skill, skillIndex) => (
-                  <div className="skills__item" key={skillIndex}>
-                    <div className="skills__item-info">
-                      <span className="skills__item-icon">{skill.icon}</span>
-                      <span className="skills__item-name">{skill.name}</span>
-                    </div>
-                    <div className="skills__item-bar">
-                      <div
-                        className="skills__item-progress"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
-                  </div>
+                  <span className="skills__tag" key={skillIndex}>
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
