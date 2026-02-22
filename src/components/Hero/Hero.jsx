@@ -1,22 +1,27 @@
 import {
-  SiReact, SiNodedotjs, SiTypescript, SiJavascript,
-  SiPython, SiDocker, SiFigma, SiGit,
-  SiNextdotjs, SiTailwindcss, SiPostgresql, SiMongodb
+  SiReact, SiNodedotjs, SiJavascript,
+  SiDocker, SiFigma, SiGit,
+  SiNextdotjs, SiMongodb, SiRedux,
+  SiExpress, SiRedis, SiAmazonwebservices,
+  SiHtml5, SiCss3, SiJenkins, SiPostman
 } from 'react-icons/si';
 import './Hero.css';
 
 const techIcons = [
-  { icon: <SiReact />, color: '#61dafb', name: 'React' },
-  { icon: <SiNextdotjs />, color: '#ffffff', name: 'Next.js' },
-  { icon: <SiTypescript />, color: '#3178c6', name: 'TypeScript' },
+  { icon: <SiHtml5 />, color: '#e34f26', name: 'HTML5' },
+  { icon: <SiCss3 />, color: '#1572b6', name: 'CSS3' },
   { icon: <SiJavascript />, color: '#f7df1e', name: 'JavaScript' },
+  { icon: <SiReact />, color: '#61dafb', name: 'React.js' },
+  { icon: <SiNextdotjs />, color: '#ffffff', name: 'Next.js' },
+  { icon: <SiRedux />, color: '#764abc', name: 'Redux' },
   { icon: <SiNodedotjs />, color: '#339933', name: 'Node.js' },
-  { icon: <SiPython />, color: '#3776ab', name: 'Python' },
-  { icon: <SiTailwindcss />, color: '#06b6d4', name: 'Tailwind' },
-  { icon: <SiPostgresql />, color: '#4169e1', name: 'PostgreSQL' },
+  { icon: <SiExpress />, color: '#ffffff', name: 'Express.js' },
   { icon: <SiMongodb />, color: '#47a248', name: 'MongoDB' },
+  { icon: <SiRedis />, color: '#dc382d', name: 'Redis' },
   { icon: <SiDocker />, color: '#2496ed', name: 'Docker' },
+  { icon: <SiAmazonwebservices />, color: '#ff9900', name: 'AWS' },
   { icon: <SiGit />, color: '#f05032', name: 'Git' },
+  { icon: <SiJenkins />, color: '#d24939', name: 'Jenkins' },
   { icon: <SiFigma />, color: '#f24e1e', name: 'Figma' },
 ];
 
