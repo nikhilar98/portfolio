@@ -48,13 +48,13 @@ const Hero = () => {
 
         {/* Heading */}
         <h1 className="hero__title">
-          Crafted for <span className="gradient-text">Engineers</span> to
-          <br />showcase their work
+          Building <span className="gradient-text">Full-Stack</span> Web
+          <br />Applications That Scale
         </h1>
 
         <p className="hero__subtitle">
-          Helping startups and brands build scalable, performant applications
-          <br />and elegant solutions for complex engineering challenges.
+          4+ years of experience crafting performant, scalable applications
+          <br />with the MERN stack — from intuitive UIs to robust backend systems.
         </p>
 
         <a href="#projects" className="btn btn-primary hero__cta">
