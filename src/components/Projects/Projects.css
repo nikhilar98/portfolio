@@ -6,10 +6,8 @@
 }
 
 .projects__card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
@@ -78,91 +76,58 @@
 
 .projects__card-icons {
   display: flex;
-  gap: 12px;
-}
-
-.projects__card-icons a {
-  color: var(--text-tertiary);
-  transition: color var(--transition-fast);
-}
-
-.projects__card-icons a:hover {
-  color: var(--text-primary);
-}
-
-/* Visual / Mockup */
-.projects__card-visual {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.projects__card-preview {
-  position: relative;
-}
-
-.projects__card-mockup {
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  aspect-ratio: 16 / 10;
-}
-
-.projects__card-browser-bar {
-  display: flex;
-  gap: 5px;
-  padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.03);
-  border-bottom: 1px solid var(--border);
-}
-
-.projects__card-browser-bar span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--border-light);
-}
-
-.projects__card-screen {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(236, 72, 153, 0.03));
-}
-
-.projects__card-metrics {
-  display: flex;
   gap: 16px;
 }
 
-.projects__card-metric {
-  flex: 1;
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 16px;
-  text-align: center;
-}
-
-.projects__card-metric-value {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 2px;
-}
-
-.projects__card-metric-label {
-  font-size: 0.75rem;
+.projects__card-icons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--text-tertiary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.projects__card-icons a span {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.projects__card-icons a:hover {
+  color: var(--primary);
+}
+
+/* Highlights */
+.projects__card-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projects__card-highlights li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.projects__card-highlights li::before {
+  content: '\25b9';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-size: 0.9rem;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .projects__card {
-    grid-template-columns: 1fr;
     padding: 32px;
-    gap: 32px;
   }
 }
 
