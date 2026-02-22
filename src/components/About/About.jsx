@@ -1,12 +1,4 @@
-import { FiCode, FiCoffee, FiHeart, FiZap } from 'react-icons/fi';
 import './About.css';
-
-const stats = [
-  { icon: <FiCode />, value: '5+', label: 'Years Experience' },
-  { icon: <FiZap />, value: '50+', label: 'Projects Completed' },
-  { icon: <FiHeart />, value: '30+', label: 'Happy Clients' },
-  { icon: <FiCoffee />, value: '∞', label: 'Cups of Coffee' },
-];
 
 const About = () => {
   return (
@@ -63,16 +55,6 @@ const About = () => {
               Download Resume
             </a>
           </div>
-        </div>
-
-        <div className="about__stats">
-          {stats.map((stat, index) => (
-            <div className="about__stat" key={index}>
-              <div className="about__stat-icon">{stat.icon}</div>
-              <span className="about__stat-value">{stat.value}</span>
-              <span className="about__stat-label">{stat.label}</span>
-            </div>
-          ))}
         </div>
       </div>
     </section>
