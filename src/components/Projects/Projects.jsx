@@ -5,7 +5,7 @@ const caseStudies = [
   {
     title: 'E-Commerce Platform',
     subtitle: 'An innovative full-stack platform for modern online retail with real-time inventory and Stripe payments.',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux'],
     github: 'https://github.com',
     live: 'https://example.com',
     metrics: [
@@ -16,7 +16,7 @@ const caseStudies = [
   {
     title: 'AI Content Generator',
     subtitle: 'An AI-powered platform leveraging OpenAI APIs for automated content creation across multiple formats.',
-    tags: ['Python', 'FastAPI', 'React', 'OpenAI'],
+    tags: ['Next.js', 'Node.js', 'AWS S3', 'Redis'],
     github: 'https://github.com',
     live: 'https://example.com',
     metrics: [
