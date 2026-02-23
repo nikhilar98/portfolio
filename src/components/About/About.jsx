@@ -17,7 +17,7 @@ const About = () => {
         <div className="about__grid">
           <div className="about__content">
             <h3 className="about__heading">
-              I'm a Software Engineer who loves turning ideas into reality
+              I'm a Software Engineer who loves turning ideas into reality.
             </h3>
             <p className="about__text">
               With over 4+ years of experience in full-stack development, I specialize in 
