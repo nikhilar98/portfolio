@@ -40,7 +40,7 @@ const Projects = () => {
         <div className="section-header">
           <h2 className="section-title">Personal Projects</h2>
           <p className="section-subtitle">
-            Deep dives into some of the projects I've built and the problems they solve.
+            Deep dive into some of the projects I've built and the problems they solve.
           </p>
         </div>
 

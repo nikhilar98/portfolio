@@ -20,16 +20,14 @@ const About = () => {
               I'm a Software Engineer who loves turning ideas into reality
             </h3>
             <p className="about__text">
-              With over 5 years of experience in full-stack development, I specialize in 
+              With over 4+ years of experience in full-stack development, I specialize in 
               building scalable web applications using modern technologies. My journey in 
               software engineering started with a curiosity about how things work on the 
               internet, and it has evolved into a deep passion for creating impactful 
               digital experiences.
             </p>
             <p className="about__text">
-              I believe in writing clean, maintainable code and following best practices. 
-              When I'm not coding, you can find me contributing to open-source projects, 
-              writing technical blog posts, or exploring new technologies.
+              I believe in writing clean, maintainable code and following best practices.
             </p>
 
             <div className="about__details">
@@ -50,10 +48,6 @@ const About = () => {
                 <span className="about__detail-value about__detail-value--available">Open to Work</span>
               </div>
             </div>
-
-            <a href="/resume.pdf" className="btn btn-primary" download>
-              Download Resume
-            </a>
           </div>
         </div>
       </div>
